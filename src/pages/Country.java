@@ -61,6 +61,14 @@ public class Country {
 		String actual_SuccessMessage=driver.findElement(orderSuccess_Message).getText();
 		System.out.println("The success Message is" + actual_SuccessMessage);
 		sAssert.assertEquals(actual_SuccessMessage, expected_SuccessMessage);
-		
+		if(expected_SuccessMessage.equalsIgnoreCase(actual_SuccessMessage))
+		{
+			System.out.println("The error message is displayin as expected" + actual_SuccessMessage);
+		}
+		else
+		{
+			System.out.println("The error message is not displayin as expected" + actual_SuccessMessage);
+			
+		}
 	}
 }
