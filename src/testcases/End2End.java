@@ -21,7 +21,7 @@ public class End2End {
 				HomePage home=new HomePage(driver);
 				home.verifyTitle();
 				
-				
+		System.out.println("Validated the page title");		
 		/*driver.get("https://rahulshettyacademy.com/seleniumPractise");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
