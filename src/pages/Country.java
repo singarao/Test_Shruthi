@@ -53,7 +53,13 @@ public class Country {
 
 	public void clickOnProceed()
 	{
-		driver.findElement(proceed_button).click();
+		try {
+			driver.findElement(proceed_button).click();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			driver.findElement(proceed_button).click();
+		}
 	}
 	public void verifyOrderSuccessMessage()
 	{

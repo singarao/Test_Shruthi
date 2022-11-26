@@ -13,11 +13,16 @@ import pages.HomePage;
 public class End2End {
 	
 	public static void main(String args[])
-	{
-		
+	{	
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/seleniumPractise");
+		driver.get("https://www.google.co.in/");
+		//creating object of home page
+				HomePage home=new HomePage(driver);
+				home.verifyTitle();
+				
+				
+		/*driver.get("https://rahulshettyacademy.com/seleniumPractise");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
@@ -51,7 +56,7 @@ public class End2End {
 		country.selectAgreeTermsCheckBox();
 		country.clickOnProceed();
 		country.verifyOrderSuccessMessage();
-		
+*/		
 	}
 
 }

@@ -39,7 +39,6 @@ public class HomePage {
 	//Locator for PROCEED TO CHECKOUT button
 	By checkOutButton= By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]");
 
-		
 	//Method to enter data in search box
 	public void enterDatainSearchBox(String search)
 	{
@@ -66,7 +65,7 @@ public class HomePage {
 			WebElement element =driver.findElement(addToCart);
 			element.click();
 		}
-		
+
 	}
 
 	//Method for Quantity decrement button
@@ -84,7 +83,6 @@ public class HomePage {
 	//Method for click on bagSign
 	public void clickOnBagSign() {
 		driver.findElement(bagSign).click();
-
 	}
 
 	//Method for click on Proceed to checkout button
@@ -92,5 +90,16 @@ public class HomePage {
 		driver.findElement(checkOutButton).click();
 
 	}
+	public void verifyTitle() {
+		String ActTitle=driver.getTitle();
+		if (ActTitle.equalsIgnoreCase("Google")) {
+			System.out.println("The title matched");
+		}
+		else
+		{
+			System.out.println("The title not matched");
+		}
 
 	}
+
+}
