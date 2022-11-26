@@ -22,12 +22,9 @@ public class End2End {
 				home.verifyTitle();
 				
 				
-		/*driver.get("https://rahulshettyacademy.com/seleniumPractise");
+		driver.get("https://rahulshettyacademy.com/seleniumPractise");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		
-		//creating object of home page
-		HomePage home=new HomePage(driver);
 		
 		//creating object of Cart page
 		Cart cart=new Cart(driver);
@@ -56,7 +53,7 @@ public class End2End {
 		country.selectAgreeTermsCheckBox();
 		country.clickOnProceed();
 		country.verifyOrderSuccessMessage();
-*/		
+		
 	}
 
 }
