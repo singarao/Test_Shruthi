@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="C:/Users/singaraomaddineni/Desktop/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="C:/Users/singaraomaddineni/Desktop/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/singaraomaddineni/Desktop/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="//Mac/Home/Downloads/javax.mail-api-1.6.2.jar"/>
+	<classpathentry kind="lib" path="//Mac/Home/Downloads/commons-io-2.11.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
